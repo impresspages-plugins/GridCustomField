@@ -5,10 +5,7 @@
 
 
 /**
- * Created by PhpStorm.
- * User: maskas
- * Date: 6/3/14
- * Time: 2:31 PM
+ * This is a GridField class that tells to Grid how general OnOff field has to be used in GRID
  */
 
 namespace Plugin\GridCustomField;

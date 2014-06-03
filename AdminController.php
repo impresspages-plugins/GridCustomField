@@ -8,7 +8,11 @@
 
 namespace Plugin\GridCustomField;
 
-
+/**
+ * Extend default GridController and provide config method.
+ * Class AdminController
+ * @package Plugin\GridCustomField
+ */
 class AdminController extends \Ip\GridController
 {
     protected  function config(){
@@ -16,12 +20,12 @@ class AdminController extends \Ip\GridController
             'title' => 'Custom field example',
             'table' => 'grid_custom_field',
             'fields' => array(
-                array(
+                array( //just basic text field
                     'type' => 'Text',
                     'label' => 'Title',
                     'field' => 'title',
                 ),
-                array(
+                array( //our custom OnOff field
                     'type' => 'Plugin\GridCustomField\GridOnOffField',
                     'label' => 'Something OF or OFF',
                     'field' => 'on_off',
